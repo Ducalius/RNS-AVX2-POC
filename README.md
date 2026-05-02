@@ -2,7 +2,7 @@
 
 A Proof-of-Concept bignum library for cryptography using Remainder Number Systems and Montgomery modular multiplitcation algorithm. Utilizes AVX2 for acceleration.
 
-Provides a 2048-bit unsigned int type and a set of arithmetic operations some cryptographic algorithms (such as RSA). 
+This PoC rovides a 2048-bit unsigned int type and a set of arithmetic operations that could be used to implement some public-key cryptographic algorithms. An example implementation of RSA is provided in rsa.c. Types of other lengths could be implemented using the same algorithms. 
 
 Acknowledgments:
 
