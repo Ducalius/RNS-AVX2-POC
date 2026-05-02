@@ -1,0 +1,570 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6001",
+          "message": {
+            "text": "Использование неинициализированной памяти \"msghex\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Prog/vsrepos/CC-RNSv1/src/RSA.c"
+                },
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 20
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "RSA_enc_mpz",
+                  "decoratedName": "RSA_enc_mpz",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Prog/vsrepos/CC-RNSv1/src/RSA.c"
+                          },
+                          "region": {
+                            "startLine": 46,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Prog/vsrepos/CC-RNSv1/src/RSA.c"
+                          },
+                          "region": {
+                            "startLine": 47,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Prog/vsrepos/CC-RNSv1/src/RSA.c"
+                          },
+                          "region": {
+                            "startLine": 47,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Prog/vsrepos/CC-RNSv1/src/RSA.c"
+                          },
+                          "region": {
+                            "startLine": 47,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Prog/vsrepos/CC-RNSv1/src/RSA.c"
+                          },
+                          "region": {
+                            "startLine": 48,
+                            "startColumn": 2
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Prog/vsrepos/CC-RNSv1/src/RSA.c"
+                          },
+                          "region": {
+                            "startLine": 49,
+                            "startColumn": 2
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Prog/vsrepos/CC-RNSv1/src/RSA.c"
+                          },
+                          "region": {
+                            "startLine": 50,
+                            "startColumn": 2
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Prog/vsrepos/CC-RNSv1/src/RSA.c"
+                          },
+                          "region": {
+                            "startLine": 51,
+                            "startColumn": 2
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Prog/vsrepos/CC-RNSv1/src/RSA.c"
+                          },
+                          "region": {
+                            "startLine": 52,
+                            "startColumn": 8
+                          }
+                        },
+                        "message": {
+                          "text": "Инициализация \"msghex\" не выполнена"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Prog/vsrepos/CC-RNSv1/src/RSA.c"
+                          },
+                          "region": {
+                            "startLine": 53,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "Пропустить эту ветвь (предполагается, что \"base==16\" равно false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Prog/vsrepos/CC-RNSv1/src/RSA.c"
+                          },
+                          "region": {
+                            "startLine": 55,
+                            "startColumn": 16
+                          }
+                        },
+                        "message": {
+                          "text": "Пропустить эту ветвь (предполагается, что \"base==10\" равно false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Prog/vsrepos/CC-RNSv1/src/RSA.c"
+                          },
+                          "region": {
+                            "startLine": 60,
+                            "startColumn": 2
+                          }
+                        },
+                        "message": {
+                          "text": "\"msghex\" является аргументом ввода-вывода для \"__gmpz_set_str\" (объявлено в d:\\prog\\vsrepos\\cc-rnsv1\\lib\\include\\gmp.h: 1043)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ]
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Prog/vsrepos/CC-RNSv1/src/RSA.c"
+                          },
+                          "region": {
+                            "startLine": 61,
+                            "startColumn": 2
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Prog/vsrepos/CC-RNSv1/src/RSA.c"
+                          },
+                          "region": {
+                            "startLine": 62,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Prog/vsrepos/CC-RNSv1/src/RSA.c"
+                          },
+                          "region": {
+                            "startLine": 63,
+                            "startColumn": 2
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Prog/vsrepos/CC-RNSv1/src/RSA.c"
+                          },
+                          "region": {
+                            "startLine": 64,
+                            "startColumn": 2
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Prog/vsrepos/CC-RNSv1/src/RSA.c"
+                          },
+                          "region": {
+                            "startLine": 60,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "\"msghex\" используется, но, возможно, не инициализировано"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33811.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/Prog/vsrepos/CC-RNSv1/src/RSA.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "72cdc296e217ab2a87d3defa7d60994d5885e84dc77ffaa653a1dd37e5a9daf7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/src/rsa.h"
+          },
+          "hashes": {
+            "sha-256": "d8f2b9906b394c6604953ea74d76e6fdd69d75bfc997d8bf720fc8a888ccc2df"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/src/montgomery.h"
+          },
+          "hashes": {
+            "sha-256": "17707b419c29f9f973dbf0c0c71026b43609371c47b4dc9e0d3b3699fc445ce0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/src/rnsmodulotype.h"
+          },
+          "hashes": {
+            "sha-256": "896cd3975f33d0a1b8a07ec1636cfbeb52e9082be2a5976183d107ec750a44f9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/src/rnsblocktype.h"
+          },
+          "hashes": {
+            "sha-256": "77613fd7edd2c1473961b8e8dcf31380a05668ef634dc81908d38967b8cd9fab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/src/consts.h"
+          },
+          "hashes": {
+            "sha-256": "b2c88f48f566f55a57f93cdd01000a9825ff711a40a3f400e1739da10e439f64"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/lib/include/gmp.h"
+          },
+          "hashes": {
+            "sha-256": "d47d1dca74b71a1cc40f6ad977f0fc1ba0c8ff280d05f15378abeabb2596e216"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/src/bn.h"
+          },
+          "hashes": {
+            "sha-256": "3c3fcc408b7f8dd98d02cce7f0677bb0fc690080318fcdccff8f88f47d6f2f2e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/src/rnsuinttype.h"
+          },
+          "hashes": {
+            "sha-256": "8bb50ba8e50f25a6a4c4021e30c0dae2da19f6a33144b8e15750ba0f00f74fa7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/lib/include/openssl/rsa.h"
+          },
+          "hashes": {
+            "sha-256": "c30eeea9aef005afac36c1ec5565d4069194c088cb7a22930d7ba0ed814d7402"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/lib/include/openssl/macros.h"
+          },
+          "hashes": {
+            "sha-256": "3071da3bdac478c6f5f67976e95b0259785bc2ba4d27aeab7b905ce9882347d6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/lib/include/openssl/opensslconf.h"
+          },
+          "hashes": {
+            "sha-256": "890184233890bacd52fd420fef07befad411b9a318b97efbf36f46673d3e7841"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/lib/include/openssl/configuration.h"
+          },
+          "hashes": {
+            "sha-256": "64d78dbc8b7666ee339fa834ccaadeb91ebab490a6d52a52527a2fc775ddd6ab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/lib/include/openssl/opensslv.h"
+          },
+          "hashes": {
+            "sha-256": "dfa786b5a05e798d032d3e4e8022700615722e6edca81b4da74017653100975f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/lib/include/openssl/asn1.h"
+          },
+          "hashes": {
+            "sha-256": "14ed6e1e9b40b3b3c1c8d0284d41e56f23e33dcd9f234440a33d7a75d45c0c66"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/lib/include/openssl/e_os2.h"
+          },
+          "hashes": {
+            "sha-256": "58bef8c4de32a8951721e21b5a9cbc0fdc6f9b3e4423cc2110ba933b06e4a64f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/lib/include/openssl/bio.h"
+          },
+          "hashes": {
+            "sha-256": "eed0c6db915f886085c6441365c9b7675036b3a92cbc4845961cb20aced9e8a1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/lib/include/openssl/crypto.h"
+          },
+          "hashes": {
+            "sha-256": "1b9d8bbf243792d89a3067ef1f814d293f23014b0c5d0d8d2a698eb546863f43"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/lib/include/openssl/safestack.h"
+          },
+          "hashes": {
+            "sha-256": "1089ec732df2ababf7185ecf93660a5a8e2cf6d84eee3097afa514086cde7cb5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/lib/include/openssl/stack.h"
+          },
+          "hashes": {
+            "sha-256": "69f94382a15a3c4cfd1dda32108db5234727b36ed0e25f1fb12e0993c7b5ac95"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/lib/include/openssl/types.h"
+          },
+          "hashes": {
+            "sha-256": "fd9a49f963f599a34792a56eea344ceb35b6958c9675169012cc3f6a484c2c11"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/lib/include/openssl/cryptoerr.h"
+          },
+          "hashes": {
+            "sha-256": "2035467a49cd64e952be41ce9a8754652acf31e481f2d710e14a0a4fc870cd4f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/lib/include/openssl/symhacks.h"
+          },
+          "hashes": {
+            "sha-256": "68b54776fa15943f3f018be6c7dc7a8847c9f512fb5eeec4f093804197dc2dfa"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/lib/include/openssl/cryptoerr_legacy.h"
+          },
+          "hashes": {
+            "sha-256": "870042252331e89723d31079469104cafd676f0fedcbe0d99f56f3e8862fff8d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/lib/include/openssl/core.h"
+          },
+          "hashes": {
+            "sha-256": "a4a8e73bd642913e2ec268d13460f7bb97aceea59152430483e013775328eb3d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/lib/include/openssl/bioerr.h"
+          },
+          "hashes": {
+            "sha-256": "fab33e1a3a6d998634e31e86556c7badfae58876c753d10c841e3506edb9bb3e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/lib/include/openssl/asn1err.h"
+          },
+          "hashes": {
+            "sha-256": "50703d11cce3d6defab8d664d3d917c6aaaa9ee677538757b811bbb288d60407"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/lib/include/openssl/bn.h"
+          },
+          "hashes": {
+            "sha-256": "ee24f408eb0e8cdf72e94d6d7fd4a411d3e12824592e493b72764957cf75a58b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/lib/include/openssl/bnerr.h"
+          },
+          "hashes": {
+            "sha-256": "f0dfac26985a7ae40174e90173df9f95b15bba4d3768290746d7258ff1b0ae64"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/lib/include/openssl/rsaerr.h"
+          },
+          "hashes": {
+            "sha-256": "a745e6b2835af7bb933e78870a270d51ab33778fe10a5cd377422d4b9587dcf0"
+          }
+        }
+      ]
+    }
+  ]
+}

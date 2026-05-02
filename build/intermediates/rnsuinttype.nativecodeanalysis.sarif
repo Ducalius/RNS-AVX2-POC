@@ -1,0 +1,83 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33811.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/src/rnsuinttype.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "1b1f7605356309f2195f5c34bc2035fa4c0275414a6176df0286e0c97ac76e3e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/src/rnsuinttype.h"
+          },
+          "hashes": {
+            "sha-256": "8bb50ba8e50f25a6a4c4021e30c0dae2da19f6a33144b8e15750ba0f00f74fa7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/src/consts.h"
+          },
+          "hashes": {
+            "sha-256": "b2c88f48f566f55a57f93cdd01000a9825ff711a40a3f400e1739da10e439f64"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/lib/include/gmp.h"
+          },
+          "hashes": {
+            "sha-256": "d47d1dca74b71a1cc40f6ad977f0fc1ba0c8ff280d05f15378abeabb2596e216"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/src/bn.h"
+          },
+          "hashes": {
+            "sha-256": "3c3fcc408b7f8dd98d02cce7f0677bb0fc690080318fcdccff8f88f47d6f2f2e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/src/rnsblocktype.h"
+          },
+          "hashes": {
+            "sha-256": "77613fd7edd2c1473961b8e8dcf31380a05668ef634dc81908d38967b8cd9fab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/prog/vsrepos/cc-rnsv1/src/mathhelpers.h"
+          },
+          "hashes": {
+            "sha-256": "dbb1686c3551c1aa40e1673d1e2adecb82edb04015766f2d76a220efce95fa26"
+          }
+        }
+      ]
+    }
+  ]
+}

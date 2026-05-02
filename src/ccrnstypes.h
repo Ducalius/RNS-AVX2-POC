@@ -1,0 +1,6 @@
+#ifndef CCRNSTYPES_H_INCLUDED
+#define CCRNSTYPES_H_INCLUDED
+
+typedef struct RNSunit;
+
+#endif // CCRNSTYPES_H_INCLUDED
